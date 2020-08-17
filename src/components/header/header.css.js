@@ -8,7 +8,6 @@ export const Container = styled.header`
 
   a {
     color: #757575;
-    transition: color 0.2s ease;
     text-decoration: none;
 
     &:hover {

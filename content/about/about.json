@@ -1,4 +1,10 @@
 {
   "title": "About",
-  "content": "content.md"
+  "content": "content.md",
+  "gallery": [{
+    "title": "React Context",
+    "copy": "For global styles.",
+    "image": "../images/gallery/headshot.jpg"
+  }]
 }
+ 

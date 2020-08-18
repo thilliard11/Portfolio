@@ -10,11 +10,11 @@ const About = ({ data }) => (
   <Layout>
     <Box>
       <Title as="h2" size="large">
-        {data.aboutJson.content.childMarkdownRemark.rawMarkdownBody}
+        About
       </Title>
     </Box>
     <Gallery items={data.aboutJson.gallery} />
-    <div style={{ height: '100vh' }} />
+    <div style={{ height: '1vh' }} />
     <Box>
       <div
         dangerouslySetInnerHTML={{

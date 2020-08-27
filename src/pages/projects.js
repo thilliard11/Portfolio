@@ -34,5 +34,16 @@ export const query = graphql`
         }
       }
     }
+    gallery {
+      title
+      copy
+      image {
+        childImageSharp {
+          fluid(maxHeight: 500, quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
   }
 `;

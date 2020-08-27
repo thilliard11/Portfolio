@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from '/projectText.css';
+import { Container } from './projectText.css';
 
 const ProjectText = ({ text }) => <Container>{text}</Container>;
 

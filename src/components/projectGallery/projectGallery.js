@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Item from 'components/gallery/item';
-import { Container } from './gallery/gallery.css';
+import { Container } from './projectGallery.css';
 
 const ProjectGallery = ({ items }) => (
   <Container>

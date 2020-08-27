@@ -4,17 +4,14 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
+import ProjectGallery from '../components/projectGallery/projectGallery';
+import ProjectText from '../components/projectText/projectText';
 
 const Projects = ({ data }) => (
   <Layout>
     <Head pageTitle={data.projectsJson.title} />
-    <Box>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.projectsJson.content.childMarkdownRemark.html,
-        }}
-      />
-    </Box>
+    <ProjectGallery items={data.projectsJson.gallery} />
+    <ProjectText text={'Hello World'} />
   </Layout>
 );
 
@@ -33,14 +30,14 @@ export const query = graphql`
           html
         }
       }
-    }
-    gallery {
-      title
-      copy
-      image {
-        childImageSharp {
-          fluid(maxHeight: 500, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
+      gallery {
+        title
+        copy
+        image {
+          childImageSharp {
+            fluid(maxHeight: 500, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
           }
         }
       }

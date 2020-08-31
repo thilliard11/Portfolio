@@ -10,8 +10,16 @@ import ProjectText from '../components/projectText/projectText';
 const Projects = ({ data }) => (
   <Layout>
     <Head pageTitle={data.projectsJson.title} />
-    <ProjectGallery items={data.projectsJson.gallery} />
-    <ProjectText text={'Hello World'} />
+    <div
+      style={{
+        display: 'flex',
+      }}
+    >
+      <ProjectGallery items={data.projectsJson.gallery} />
+      <ProjectText
+        text={data.projectsJson.content.childMarkdownRemark.rawMarkdownBody}
+      />
+    </div>
   </Layout>
 );
 
@@ -28,6 +36,7 @@ export const query = graphql`
       content {
         childMarkdownRemark {
           html
+          rawMarkdownBody
         }
       }
       gallery {

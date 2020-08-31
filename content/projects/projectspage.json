@@ -1,0 +1,10 @@
+{
+    "title": "Projects",
+    "content": "content.md",
+    "gallery": [{
+        "title": "React Context",
+        "copy": "For global styles.",
+        "image": "../images/gallery/icon1.png"
+      }]
+ }
+  

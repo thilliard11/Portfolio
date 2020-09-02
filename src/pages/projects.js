@@ -17,7 +17,9 @@ const Projects = ({ data }) => (
     >
       <ProjectGallery items={data.projectsJson.gallery} />
       <ProjectText
-        text={data.projectsJson.content.childMarkdownRemark.rawMarkdownBody}
+        question={data.projectsJson.content.childMarkdownRemark.rawMarkdownBody}
+        solution={'Hello'}
+        result={'World'}
       />
     </div>
   </Layout>
@@ -35,12 +37,10 @@ export const query = graphql`
       title
       content {
         childMarkdownRemark {
-          html
           rawMarkdownBody
         }
       }
       gallery {
-        title
         copy
         image {
           childImageSharp {

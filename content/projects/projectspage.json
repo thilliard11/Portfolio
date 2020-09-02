@@ -1,6 +1,6 @@
 {
     "title": "Projects",
-    "content": "content.md",
+    "content": "content.markdown",
     "gallery": [{
         "title": "React Context",
         "copy": "For global styles.",

@@ -12,14 +12,17 @@ const Projects = ({ data }) => (
     <Head pageTitle={data.projectsJson.title} />
     <div
       style={{
-        display: 'flex',
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
       }}
     >
       <ProjectGallery items={data.projectsJson.gallery} />
       <ProjectText
-        question={data.projectsJson.content.childMarkdownRemark.rawMarkdownBody}
-        solution={'Hello'}
-        result={'World'}
+        question={
+          data.projectsJson.question.childMarkdownRemark.rawMarkdownBody
+        }
+        solution={data.projectsJson.answer.childMarkdownRemark.rawMarkdownBody}
+        result={data.projectsJson.result.childMarkdownRemark.rawMarkdownBody}
       />
     </div>
   </Layout>
@@ -35,7 +38,17 @@ export const query = graphql`
   query ProjectsQuery {
     projectsJson {
       title
-      content {
+      question {
+        childMarkdownRemark {
+          rawMarkdownBody
+        }
+      }
+      answer {
+        childMarkdownRemark {
+          rawMarkdownBody
+        }
+      }
+      result {
         childMarkdownRemark {
           rawMarkdownBody
         }
@@ -44,7 +57,7 @@ export const query = graphql`
         copy
         image {
           childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
+            fluid(maxHeight: 600, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

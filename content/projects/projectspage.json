@@ -1,6 +1,8 @@
 {
     "title": "Projects",
-    "content": "content.markdown",
+    "question": "question.md",
+    "answer": "answer.md",
+    "result": "result.md",
     "gallery": [{
         "title": "React Context",
         "copy": "For global styles.",

@@ -9,14 +9,20 @@ const ProjectText = ({ question, solution, result }) => (
       My Problem
     </ProjectTitle>
     {question}
+    <br />
+    <br />
     <ProjectTitle as="h2" size="large">
       My Solution
     </ProjectTitle>
     {solution}
+    <br />
+    <br />
     <ProjectTitle as="h2" size="large">
       My Result
     </ProjectTitle>
     {result}
+    <br />
+    <br />
   </Container>
 );
 

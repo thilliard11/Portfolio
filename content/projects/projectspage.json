@@ -6,7 +6,13 @@
     "gallery": [{
         "title": "React Context",
         "copy": "For global styles.",
+        "image": "../images/gallery/headshot.jpg"
+      },
+      {
+        "title": "React Context",
+        "copy": "For global styles.",
         "image": "../images/gallery/icon1.png"
-      }]
- }
+      }
+    ]
+}
   

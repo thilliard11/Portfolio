@@ -6,16 +6,12 @@ import Box from 'components/box';
 import Head from 'components/head';
 import ProjectGallery from '../components/projectGallery/projectGallery';
 import ProjectText from '../components/projectText/projectText';
+import ProjectBox from '../components/projectBox/projectBox';
 
 const Projects = ({ data }) => (
   <Layout>
     <Head pageTitle={data.projectsJson.title} />
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-      }}
-    >
+    <ProjectBox>
       <ProjectGallery items={data.projectsJson.gallery} />
       <ProjectText
         question={
@@ -24,7 +20,7 @@ const Projects = ({ data }) => (
         solution={data.projectsJson.answer.childMarkdownRemark.rawMarkdownBody}
         result={data.projectsJson.result.childMarkdownRemark.rawMarkdownBody}
       />
-    </div>
+    </ProjectBox>
   </Layout>
 );
 
@@ -57,7 +53,7 @@ export const query = graphql`
         copy
         image {
           childImageSharp {
-            fluid(maxHeight: 600, quality: 90) {
+            fluid(maxHeight: 300, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

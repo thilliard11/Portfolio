@@ -5,9 +5,9 @@ export const Container = styled.div`
   // display: inline-grid;
   flex: 1;
   grid-gap: 4rem;
-  padding: 0 1rem;
-  margin: 2rem 15rem;
-  margin-left: 20rem;
+  padding: 4rem 1rem;
+  margin: 2rem 5rem;
+  margin-left: 10rem;
 
   ${MEDIA.TABLET`
     display: block;

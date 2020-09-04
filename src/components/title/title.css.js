@@ -20,7 +20,6 @@ export const Text = styled.span`
     }
   }};
   line-height: 1.2;
-
   ${MEDIA.TABLET`
     font-size: ${({ size }) => () => {
       switch (size) {

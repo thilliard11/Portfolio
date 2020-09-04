@@ -1,6 +1,0 @@
-.projectTile {
-    display: 'inline-grid' !important;
-    float: 'left';
-    grid-template-columns: '1fr 1fr';
-    float: 'left';
-}

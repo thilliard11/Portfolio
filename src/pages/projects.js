@@ -7,6 +7,7 @@ import Head from 'components/head';
 import ProjectGallery from '../components/projectGallery/projectGallery';
 import ProjectText from '../components/projectText/projectText';
 import ProjectBox from '../components/projectBox/projectBox';
+import Title from '../components/title/title';
 
 const Projects = ({ data }) => (
   <Layout>

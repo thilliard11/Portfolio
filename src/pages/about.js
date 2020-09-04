@@ -8,11 +8,6 @@ import Title from 'components/title';
 
 const About = ({ data }) => (
   <Layout>
-    <Box>
-      <Title as="h2" size="large">
-        About
-      </Title>
-    </Box>
     <Gallery items={data.aboutJson.gallery} />
     <div style={{ height: '1vh' }} />
     <Box>

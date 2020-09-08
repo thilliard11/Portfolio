@@ -9,8 +9,11 @@ export const Container = styled.div`
   padding: 4rem 4rem;
   margin: 2rem 2rem;
   line-height: 1.8rem;
+  text-align: justify;
 
   ${MEDIA.TABLET`
-    display: block;
+    display: grid;
+    width: 70%;
+    margin-top: 0;
   `};
 `;

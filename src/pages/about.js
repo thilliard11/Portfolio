@@ -4,10 +4,11 @@ import Layout from 'components/layout';
 import Box from 'components/box';
 import Gallery from 'components/gallery';
 import { graphql } from 'gatsby';
-import Title from 'components/title';
+import Head from 'components/head';
 
 const About = ({ data }) => (
   <Layout>
+    <Head pageTitle={data.aboutJson.title} />
     <Gallery items={data.aboutJson.gallery} />
     <div style={{ height: '1vh' }} />
     <Box>

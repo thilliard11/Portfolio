@@ -21,16 +21,30 @@ const Nav = () => (
           Projects
         </Link>
       </li>
+      <hr
+        style={{
+          width: '1px',
+          height: '15px',
+          background: 'black',
+          border: 'none',
+          margin: '0 15px 0 25px'
+        }} />
       <li>
         <a
           href="https://github.com/thilliard11"
           target="_blank"
           rel="noreferrer noopener "
-          activeStyle={activeStyles}
         >
-          GitHub
+          <img src={require('./GitHub-Mark-64px.png')} alt='' style={{ height: '18px', width: '18px', position: 'relative', top: '-3px' }} />
         </a>
       </li>
+      <a
+        href="https://www.linkedin.com/in/truett-hilliard/"
+        target="_blank"
+        rel="noreferrer noopener "
+      >
+        <img src={require('./LI-In-Bug.png')} alt='' style={{ height: '18px', width: '23px', position: 'relative', top: '-3px', paddingLeft: '15px', filter: 'brightness(0%)' }} />
+      </a>
     </ul>
   </Container>
 );

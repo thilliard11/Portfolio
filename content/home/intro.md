@@ -1,1 +1,1 @@
-I'm a self-taught developer changing the world one Udemy course at a time.
+Self-indulgent bullshit to go right here, not much more than this

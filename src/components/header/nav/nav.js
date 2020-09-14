@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { Container } from './nav.css';
 
 const activeStyles = {
-  paddingBottom: '3px',
+  paddingBottom: '2px',
   borderBottom: '1px solid #757575',
   fontWeight: '700',
 };

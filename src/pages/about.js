@@ -11,6 +11,7 @@ const About = ({ data }) => (
     <Head pageTitle={data.aboutJson.title} />
     <Gallery items={data.aboutJson.gallery} />
     <div style={{ height: '1vh' }} />
+    <Box><hr></hr></Box>
     <Box>
       <div
         dangerouslySetInnerHTML={{

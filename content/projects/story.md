@@ -1,0 +1,1 @@
+The Texas Parks site is the capstone project from the "Web Developer's Bootcamp" on Udemy. The project showcases the technologies learned in the course with a clone of a Yelp-like review site. 

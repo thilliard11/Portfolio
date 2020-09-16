@@ -1,1 +1,1 @@
-Self-indulgent bullshit to go right here, not much more than this
+Hi, I'm Truett and I want to help you build your next thing

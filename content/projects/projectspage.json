@@ -1,23 +1,20 @@
 {
-    "title": "Projects",
-    "question": "question.md",
-    "answer": "answer.md",
-    "result": "result.md",
-    "gallery": [{
-        "title": "React Context",
-        "copy": "For global styles.",
-        "image": "../images/gallery/landingPage.jpeg"
-      },
-      {
-        "title": "React Context",
-        "copy": "For global styles.",
-        "image": "../images/gallery/indexPage.jpeg"
-      },
-      {
-        "title": "React Context",
-        "copy": "For global styles.",
-        "image": "../images/gallery/showPage.jpeg"
-      }
-    ]
+  "title": "Projects",
+  "story": "story.md",
+  "answer": "answer.md",
+  "result": "result.md",
+  "gallery": [
+    {
+      "copy": "Texas Parks landing page",
+      "image": "../images/gallery/landingPage.jpeg"
+    },
+    {
+      "copy": "Index page display",
+      "image": "../images/gallery/indexPage.jpeg"
+    },
+    {
+      "copy": "Show page layout",
+      "image": "../images/gallery/showPage.jpeg"
+    }
+  ]
 }
-  

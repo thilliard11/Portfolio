@@ -4,37 +4,21 @@ import { Container } from './projectText.css';
 import ProjectTitle from 'components/projectTitle';
 import Title from 'components/title';
 
-const ProjectText = ({ question, solution, result }) => (
+const ProjectText = ({ story }) => (
   <Container>
     <Title as="h1" size="large">
       Texas Parks
     </Title>
     <br />
     <ProjectTitle as="h3" size="large">
-      My Problem
+      Another Getting Started guide
     </ProjectTitle>
-    {question}
-    <br />
-    <br />
-    <ProjectTitle as="h3" size="large">
-      My Solution
-    </ProjectTitle>
-    {solution}
-    <br />
-    <br />
-    <ProjectTitle as="h3" size="large">
-      My Result
-    </ProjectTitle>
-    {result}
-    <br />
-    <br />
+    {story}
   </Container>
 );
 
 ProjectText.propTypes = {
-  question: PropTypes.string,
-  solution: PropTypes.string,
-  result: PropTypes.string,
+  story: PropTypes.string,
 };
 
 export default ProjectText;
